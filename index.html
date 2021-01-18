@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite example</title>
+  </head>
+  <body>
+    <h1>Example using Vite!</h1>
+    <div id="main"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+    ></script>
+    <script type="module">
+      import Main from '/dist/react-test.es.js'
+      ReactDOM.render(
+        React.createElement(Main),
+        document.getElementById('main')
+      )
+    </script>
+  </body>
+</html>
