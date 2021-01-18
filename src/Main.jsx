@@ -1,14 +1,10 @@
 import React from 'react'
 import logo from './logo.svg'
 import './Main.css'
-import { proxy, useProxy } from 'valtio'
-
-const state = proxy({
-  count: 0
-})
+import { useLocalProxy } from 'valtio/utils'
 
 function App () {
-  const snapshot = useProxy(state)
+  const [snapshot, state] = useLocalProxy({ count: 0 })
   return (
     <div className='App'>
       <header className='App-header'>
