@@ -4,7 +4,7 @@ module.exports = {
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/Main.jsx'),
-      name: 'react-test'
+      name: 'App'
     },
     rollupOptions: {
       external: ['react', 'react-dom']

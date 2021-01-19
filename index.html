@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite example</title>
+    <link rel="stylesheet" href="/dist/style.css" />
   </head>
   <body>
     <h1>Example using Vite!</h1>
@@ -16,12 +17,9 @@
       crossorigin
       src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
     ></script>
+    <script src="/dist/react-test.umd.js"></script>
     <script type="module">
-      import Main from '/dist/react-test.es.js'
-      ReactDOM.render(
-        React.createElement(Main),
-        document.getElementById('main')
-      )
+      ReactDOM.render(React.createElement(App), document.getElementById('main'))
     </script>
   </body>
 </html>
