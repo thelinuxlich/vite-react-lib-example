@@ -9,5 +9,8 @@ module.exports = {
     rollupOptions: {
       external: ['react', 'react-dom']
     }
+  },
+  optimizeDeps: {
+    include: ['valtio/utils']
   }
 }
