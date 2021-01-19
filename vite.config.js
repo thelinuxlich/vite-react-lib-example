@@ -7,7 +7,12 @@ module.exports = {
       name: 'react-test'
     },
     rollupOptions: {
-      external: ['react', 'react-dom']
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          'react': 'React'
+        }
+      }
     }
   },
   optimizeDeps: {
